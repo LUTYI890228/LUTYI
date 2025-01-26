@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+     <meta charset="UTF-8"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUTYI</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/favicon-32x32" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/favicon-16x16" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
+   
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Add this right after the opening body tag -->
+    <div class="search-overlay">
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input">
+            <button class="close-search">×</button>
+        </div>
+    </div>
+
+    <div class="scroll-progress"></div>
+
+    <header>
+        <div class="logo">
+            <a href="#home">
+                <img src="Images/lutyi logo.png" alt="LUTYI Logo">
+            </a>
+        </div>
+        
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="search-icon">
+                    <button class="search-toggle">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="cart-container">
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-title">
+            <h1>Welcome to <span>LUTYI</span></h1>
+            <p>discover a world of fine jewellery, where exceptional gemstones meet exquisite craftsmanship.</p>
+        </div>
+        
+        <div class="hero-image">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="Images/bg.jpg" alt="Jewelry 1">
+                </div>
+                <div class="slide">
+                    <img src="Images/bg.png" alt="Jewelry 2">
+                </div>
+                <div class="slide">
+                    <img src="Images/bg3.jpg" alt="Jewelry 3">
+                </div>
+            </div>
+            
+            <!-- 添加幻灯片导航点 -->
+            <div class="slider-nav">
+                <div class="slider-dot active"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+            </div>
+
+            <div class="view-product-btn">
+                <a href="#products">View Collection</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-header">
+            <h2>Our Story</h2>
+            <div class="separator"></div>
+            <div class="about-image">
+                <img src="Images/lutyi logo.png" alt="LUTYI Heritage">
+            </div>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+                <p class="about-description">
+                    Since 2015, LUTYI has been crafting exquisite jewelry that celebrates life's most precious moments. Each piece tells a unique story, combining timeless elegance with contemporary design.
+                </p>
+                
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-gem"></i>
+                        <h4>Customization</h4>
+                        <p>Create your unique piece with our expert designers</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-tools"></i>
+                        <h4>Lifetime Service</h4>
+                        <p>Free maintenance and repair for all pieces</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-certificate"></i>
+                        <h4>GIA Certified</h4>
+                        <p>All diamonds are GIA certified</p>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="number">8</span>
+                        <span class="label">Years of Excellence</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">1000+</span>
+                        <span class="label">Unique Pieces</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">10+</span>
+                        <span class="label">Global Boutiques</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section" id="products">
+        <div class="products-header">
+            <h2>Product</h2>
+            <div class="separator"></div>
+        </div>
+
+        <div class="products-container">
+            <div class="products-slider">
+                <div class="products-track">
+                    <div class="product-item" data-product-id="1">
+                        <div class="product-image">
+                            <img src="images/product1.png" alt="Lutyi Rose Earrings">
+                        </div>
+                        <div class="product-info">
+                            <h3>Lutyi Rose Earrings</h3>
+                            <p>Rose Gold Diamond Earrings</p>
+                            <span class="price">10,800 RM</span>
+                        </div>
+                        <div class="product-details" style="display: none;">
+                            <p class="description">Exquisite rose gold earrings featuring brilliant-cut diamonds in our signature rose design. Each earring is meticulously crafted to capture light from every angle.</p>
+                            <div class="specifications">
+                                <p>Metal: 18K Rose Gold</p>
+                                <p>Diamond Weight: 0.50 ct</p>
+                                <p>Clarity: VS1</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-product-id="5">
+                        <div class="product-image">
+                            <img src="images/product5.jpg" alt="Lutyi Rose Series Ring">
+                        </div>
+                        <div class="product-info">
+                            <h3>Lutyi White Gold Series Ring</h3>
+                            <p>White Gold Ring</p>
+                            <span class="price">6,800 RM</span>
+                        </div>
+                        <div class="product-details" style="display: none;">
+                            <p class="description">Elegant white gold ring featuring. A perfect blend of classic beauty and modern sophistication.</p>
+                            <div class="specifications">
+                                <p>Metal: 18K White Gold</p>
+                                <p>Ring Weight: 0.35 ct</p>
+                                <p>Clarity: VS2</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-product-id="3">
+                        <div class="product-image">
+                            <img src="Images/Screenshot 2025-01-24 151505.png" alt="Lutyi Rose Ring">
+                        </div>
+                        <div class="product-info">
+                            <h3>Lutyi Rose Ring</h3>
+                            <p>White Gold Diamond Ring</p>
+                            <span class="price">21,500 RM</span>
+                        </div>
+                        <div class="product-details" style="display: none;">
+                            <p class="description">Stunning white gold ring showcasing a magnificent center diamond surrounded by our signature rose pattern. The epitome of luxury and craftsmanship.</p>
+                            <div class="specifications">
+                                <p>Metal: 18K White Gold</p>
+                                <p>Center Diamond: 1.25 ct</p>
+                                <p>Clarity: VVS1</p>
+                             
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-product-id="4">
+                        <div class="product-image">
+                            <img src="Images/n.png" alt="Lutyi Rose Pendant">
+                        </div>
+                        <div class="product-info">
+                            <h3>Lutyi Rose Pendant</h3>
+                            <p>White Gold Diamond Pendant</p>
+                            <span class="price">24,500 RM</span>
+                        </div>
+                        <div class="product-details" style="display: none;">
+                            <p class="description">Exquisite white gold pendant featuring a unique rose design with premium diamonds. Each detail is carefully crafted to create a piece of timeless elegance.</p>
+                            <div class="specifications">
+                                <p>Metal: 18K White Gold</p>
+                                <p>Diamond Weight: 1.50 ct</p>
+                                <p>Clarity: VVS2</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 合并导航和分页 -->
+            <div class="products-navigation">
+                <button class="nav-btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="products-pagination">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                </div>
+                <button class="nav-btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- 产品详情弹窗 -->
+        <div class="product-modal">
+            <div class="modal-content">
+                <button class="close-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-product-details">
+                    <div class="modal-product-image">
+                        <img src="Images/product2.png" alt="Product Image">
+                    </div>
+                    <div class="modal-product-info">
+                        <span class="category">Jewelry Collection</span>
+                        <h3></h3>
+                        <p class="description"></p>
+                        <div class="specifications"></div>
+                        <span class="price"></span>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="text" value="1" min="1" class="quantity-input" readonly>
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+        <div class="gallery-header">
+            <h2>Fine Jewelry Collection</h2>
+            <div class="separator"></div>
+            <p class="subtitle">Each Piece Tells a Story of Elegance</p>
+        </div>
+
+        <div class="gallery-slider">
+            <div class="gallery-track">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="images/p1.jpg" alt="Diamond Necklace">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="images/p2.jpg" alt="Diamond Ring">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="images/p3.jpg" alt="Diamond Earrings">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="images/p4.jpg" alt="Diamond Ring">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="images/p5.jpg" alt="Diamond Earrings">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-header">
+            <h2>Contact Us</h2>
+            <div class="separator"></div>
+            <p class="subtitle">Experience Personalized Service</p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="info-details">
+                        <h3>Contact Details</h3>
+                        <p>+60 12 345 6789</p>
+                        
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-details">
+                        <h3>Boutique Location</h3>
+                        <p>Bukit Bintang<br> 56100 Kuala Lumpur,Malaysia</p>
+                        <p class="hours">Monday - Saturday: 10:00 AM - 7:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Schedule an Appointment</h3>
+                <p class="form-description">We would be delighted to assist you in discovering our exclusive collection. Please fill in your details below.</p>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferred-date">Preferred Visit Date</label>
+                        <input type="date" id="preferred-date" name="preferred-date">
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Request Appointment
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this before closing body tag -->
+    <script src="js/animation.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/products.js"></script>
+
+    
+
+    <script src="js/gallery-slider.js"></script>
+
+    <!-- 添加购物车侧边栏 -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items">
+            <!-- 购物车项目将通过 JavaScript 动态添加 -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">RM 0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <div class="cart-overlay"></div>
+
+    <script src="js/search.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
